@@ -14,6 +14,10 @@ class DisciplinaService {
     return disciplinaNova;
   }
 
+  remover(codigo) {
+    this.repositorio.remover(codigo);
+  }
+
   pesquisarPorCodigo(codigo) {
     return this.repositorio
       .listar()

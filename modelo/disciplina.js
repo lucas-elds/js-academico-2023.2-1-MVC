@@ -1,8 +1,8 @@
 class Disciplina {
   constructor(codigo, nome, alunos) {
     this._codigo = codigo;
-    this.nome = nome;
-    this.alunos = alunos;
+    this.nomeAluno = nome;
+    this.arrayAlunos = alunos;
   }
 
   get codigo() {
@@ -14,14 +14,14 @@ class Disciplina {
   }
 
   get nome() {
-    return this.nome;
+    return this.nomeAluno;
   }
 
   set nome(novoNome) {
-    this.nome = novoNome;
+    this.nomeAluno = novoNome;
   }
 
   get alunos() {
-    return this.alunos;
+    return this.arrayAlunos;
   }
 }
